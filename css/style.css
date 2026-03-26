@@ -19,15 +19,41 @@
   background-color: #063270;
   color: #ffffff;
 }
-
 .header {
-text-transform: uppercase;
-font-weight: normal;
-display: flex;
-flex-direction: wrap;
-justify-content: space-between;
-align-items: center;
-gap: 1rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; /* logo left, title right */
+  gap: 1rem;
+  padding: 1rem;
+}
+logo{
+  flex-shrink: 0;
+}
+  
+nav.navbar {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+nav.navbar ul {
+  display: flex;
+  justify-content: center; /* centers the links */
+  list-style: none;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav.navbar a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+nav.navbar a:hover {
+  color: var(--sunglow);
 }
 
 
