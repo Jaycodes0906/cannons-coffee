@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+ --black: #000000;
+ --catalina: #06327d;
+--bluetiful: #2b70e4;
+--vegan: #209d5c;
+--sunglow: #ffd034;
+--white: #ffffff;
+--light-blue: #cadbf8;
+}
+
+
+
+  body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  background-color: #063270;
+  color: #ffffff;
+}
+
+.header {
+text-transform: uppercase;
+font-weight: normal;
+display: flex;
+flex-direction: wrap;
+justify-content: space-between;
+align-items: center;
+gap: 1rem;
+}
+
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.1667;
+  font-weight: 300;
+  text-transform: uppercase;
+  
+}
+
+.card {
+  padding: 2rem;
+}
+
+.card a {
+  background-color: #2b70e4;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  gap: 1rem;
+}
+
+.navbar {
+  list-style: none;
+  text-decoration: none;
+}
+
+
+@media (max-width: 1000px){
+  .color-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #cadbf8;
+
+  }
+}
+    
+
+
+
