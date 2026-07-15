@@ -1,5 +1,96 @@
-/* BASIC FORMATTING */
-html {
+:root {
+  --black: #000000;
+  --catalina: #062e8a;
+  --bluetiful: #2b8eff;
+  --vegan: #a8d5ba;
+  --sunglow: #ffcc33;
+  --white: #ffffff;
+  --light-blue: #add8e6;
+  --montserrat: Montserrat;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+HTML{
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--montserrat);
+  background-color: var(--catalina);
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 1rem;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.1667;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.1667;
+  font-weight: 300;
+  text-transform: uppercase
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 1.1667;
+  font-weight: 300;
+}
+
+nav a {
+  display:flex;
+  justify-content: center;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+logo {
+  width: 100px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BASIC FORMATTING */ 
+HTML{
   box-sizing: border-box;
 }
 *,
