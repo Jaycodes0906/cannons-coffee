@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --black: #000000;
   --catalina: #062e8a;
@@ -8,8 +10,6 @@
   --light-blue: #add8e6;
   --montserrat: Montserrat;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 HTML{
   box-sizing: border-box;
@@ -29,17 +29,29 @@ body {
 
 .wrapper {
   max-width: 1200px;
-  margin: 1rem auto;
+  margin: 0 auto;
   padding: 1rem;
-  justify-content: center;
+}
+
+.logo {
+display: flex;
+justify-content: center;
+padding: 0;
+margin: 0;
+align-items: center;
 }
 
 h1 {
+  display: flex;
+  flex-direction: wrap;
   font-size: 3rem;
   line-height: 1.1667;
   font-weight: 300;
   text-transform: uppercase;
   margin: 0;
+  padding: 1rem;
+  color: var(--white);
+  align-items: start;
 }
 
 h2 {
@@ -55,32 +67,63 @@ h3 {
   font-weight: 300;
 }
 
-nav a {
-  display:flex;
+header {
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  list-style-type: none;
-  align-items: center;
+  gap: 2rem;
 }
 
 nav ul {
   display: flex;
   justify-content: center;
-  text-decoration: none;
-  padding: 0;
+  list-style-type: none;
+  color: var(--white);
+  text-transform: uppercase;
   margin: 0;
+  padding: 0;
 }
 
-logo {
-  width: 100px;
-  height: auto;
-  margin-right: 1rem;
+ nav a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 1rem;
+  color: var(--white);
 }
 
+.contact-btn {
+  display: inline-block;
+  background-color: var(--sunglow);
+  color: var(--white);
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
+.contact-btn:hover {
+  background-color: var(--light-blue);
+}
 
+.footer {
+  justify-content: center;
+  font-family: var(--montserrat);
+  color: var(--white);
+}
 
+@media (min-width: 650px) {
+   
+}
 
-
+@media (min-width: 1000px) {
+   header {
+    justify-content: space-between;
+    align-items:center;
+    gap: 2rem;
+   }
+  
+}
 
 
 
