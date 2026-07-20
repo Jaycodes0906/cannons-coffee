@@ -9,6 +9,7 @@
   --white: #ffffff;
   --light-blue: #add8e6;
   --montserrat: Montserrat;
+  --green: #008000;
 }
 
 HTML{
@@ -27,6 +28,12 @@ body {
   line-height: 1.5;
 }
 
+main {
+  text-align: center;
+  border-bottom: 10px solid var(--sunglow);
+  border-top:10px solid var(--sunglow);
+  margin: 0;
+}
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -94,16 +101,9 @@ nav ul {
 
 .contact-btn {
   display: inline-block;
-  background-color: var(--sunglow);
-  color: var(--white);
-  padding: 12px 24px;
-  border-radius: 6px;
+color: var(--white);
   text-decoration: none;
-  font-weight: bold;
-}
-
-.contact-btn:hover {
-  background-color: var(--light-blue);
+  align-items: center;
 }
 
 .footer {
@@ -113,25 +113,85 @@ nav ul {
 }
 
 @media (min-width: 650px) {
-   
+
 }
 
 @media (min-width: 1000px) {
    header {
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     gap: 2rem;
    }
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--white);
+    color: var(--black);
+    list-style-type: none;
+}
+
+ .img {
+   max-width: 100px;
+  /* height: auto; */
+  background-color: var(--white);
+}
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    background-color: var(--white);
+  }
+
+.table {
+  align-self: center;
+  margin-top: 8px;
+  text-decoration: none;
+  color: var(--white);
+  border: 1px solid #333;
+  background-color: #008000;
+  border-radius: 5rem;
   
 }
 
+@media (min-width: 650px) {
+  .row {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .img {
+    max-width: 250px;
+    flex: 0 0 auto;
+  }
+  .text {
+    align-items: center;
+    text-align: left;
+  }
+  h2 p {
+    text-align: left;
+    align-self: flex-start;
+  }
+  .table {
+    align-self: center;
+  }
+}
 
-
-
-
-
-
-
+@media (min-width: 1000px) {
+  .row {
+    gap: 40px;
+    padding: 40px;
+  }
+  .img {
+    max-width: 350px;
+  }
+}
 /* BASIC FORMATTING */ 
 HTML{
   box-sizing: border-box;
