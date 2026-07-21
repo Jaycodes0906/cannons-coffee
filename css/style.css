@@ -131,14 +131,13 @@ color: var(--white);
     gap: 20px;
     padding: 20px;
     background-color: var(--white);
-    color: var(--black);
     list-style-type: none;
 }
 
  .img {
    max-width: 100px;
-  /* height: auto; */
-  background-color: var(--white);
+   border: 0;
+  background-color:  var(--white);
 }
   .text {
     display: flex;
@@ -146,7 +145,7 @@ color: var(--white);
     align-items: center;
     gap: 12px;
     text-align: center;
-    background-color: var(--white);
+   background-color: var(--white); 
   }
 
 .table {
