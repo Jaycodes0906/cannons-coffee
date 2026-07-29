@@ -2,16 +2,13 @@
 
 :root {
   --black: #000000;
-  --catalina: #062e8a;
-  --bluetiful: #2b8eff;
-  --vegan: #a8d5ba;
-  --sunglow: #ffcc33;
+  --catalina: #06327d;
+  --bluetiful: #2b70e4;
+  --vegan: #209d5c;
+  --sunglow: #ffd034;
   --white: #ffffff;
-  --light-blue: #add8e6;
+  --light-blue: #cadbf8;
   --montserrat: Montserrat;
-  --green: #008000;
-  border-top-left-radius: --radius;
-  border-top-right-radius: --radius;
 }
 
 HTML{
@@ -37,7 +34,6 @@ main {
   text-align: center;
   border-bottom: 10px solid var(--sunglow);
   border-top:10px solid var(--sunglow);
-  margin: 3rem;
   padding: 0;
 }
 
@@ -94,7 +90,7 @@ align-items: center;
 .button1 {
   display: inline-block;
   text-decoration: none;
-  background-color: var(--green);
+  background-color: var(--vegan);
   color: var(--white);
   text-transform: uppercase;
   border-radius: 10px;
@@ -153,7 +149,7 @@ nav ul {
   display: flex;
   flex-flow: row wrap;
   list-style-type: none;
-  align-items: center;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
@@ -189,16 +185,17 @@ nav ul {
 .title {
   background-color: var(--light-blue);
   display: flex;
-  padding: 0;
-  margin: 0;
+  padding: 2rem;
+  text-align: left;
 }
+
 .container2 {
   background-color: var(--light-blue);
   grid-template-columns: 1fr;
   display: grid;
   gap: 4rem;
   padding: 2rem;
-  margin: 0;
+  text-align: left;
 }
 
 img {
@@ -210,9 +207,9 @@ img {
 }
 
 .child1 {
-  border-radius: 0;
+  border-radius: var(--radius);
+  border: 5rem;
   padding: 0;
-  margin: 0;
 }
 
 .child2 {
@@ -231,7 +228,7 @@ footer {
 @media (min-width: 650px) {
   .container2 {
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 4rem;
   }
 }
 
@@ -244,24 +241,6 @@ footer {
     gap: 2rem;
    }
   }
-
-  .wrapper {
-     max-width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-  font-family: var(--montserrat);
-  }
-
-  header {
-  text-align: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 0;
-  margin: 0;
-  color: var(--white);
-}
 
 .top {
   display: flex;
@@ -296,9 +275,9 @@ nav ul {
   padding: 0;
 }
 
-.button2 {
+.button1 {
   text-transform: uppercase;
-  background-color: var(--green);
+  background-color: var(--vegan);
   color: var(--white);
   border-radius: 10px;
   text-decoration: none;
@@ -310,5 +289,6 @@ nav ul {
 
 .child1 {
   display: flex;
-  color: var(--white);
+  background-color: var(--white);
+  background-color: var(--catalina);
 }
