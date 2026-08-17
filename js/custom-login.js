@@ -1,16 +1,29 @@
-const form = document.getElementById("inquiryForm");
+const form = document.getElementById("login");
 
-form.addEventListener("submit", submit)
-    function(event) {
-    event.preventDefault();
+   
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const pass = document.getElementById("pass").value;
+function onFormSubmit(event) {
+
+   event.preventDefault();
+
+   const data = new FormData(event.target);
+
+   const dataObject = Object.fromEntries(data.entries());
+
+   console.log(dataObject);
+
+   form.reset();
+
+
+    let name = dataObject.name
+    let email = dataObject.email
+    let pass = dataObject.password
+    let message = dataObject.message
     
     console.log("Name:", name);
     console.log("Email:", email);
    console.log("password", pass);
+
 
     message.textContent = `Welcome, ${name}! You are logged in!`
     console.log(message);

@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    <script src="js/script.js"></script>
     <div class="wrapper">
         <header>
             <div class="top">
@@ -22,43 +21,44 @@
                     <li><a href="latte.html" target="_blank" class="button">Coffee</a></li>
                     <li><a href="https://www.starbucks.com/" target="_blank" class="button">About</a></li>
                     <li><a href="mailto: Jordan81hoc@gmail.com" class="Contact button">Contact</a></li>
-                    <li><a href="custom-inquiry.js" target="_blank" class="button">login</a></li>
+                    <li><a href="login.html" class="button">login</a></li>
+                    <li><a href="inquiry.html" class="button">inquiry</a></li>
                 </ul>
             </nav>
 
         </header>
         <main>
-          <h2>Inquiry Form</h2>
-          
-          <form id="inquiryForm">
+            <h2>Inquiry Form</h2>
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <form id="inquiryForm">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phoneNumber">Phone:</label>
+                <input type="tel" id="phoneNumber" name="phone">
 
 
-            <label for="coffee">Favorite flavor?</label>
-            <select id="coffee" name="coffee">
-                <option value="">--Please choose</option>
-                <option value="mocha">Mocha</option>
-                <option value="icecoffee">Ice Coffee</option>
-                <option value="coffee">Coffee</option>
-                <option value="vanilla">Vanilla</option>
-                <option value="chocolate">Chocolate</option>
-                <option value="caramel">Caramel</option>
-            </select>
+                <label for="coffee">Favorite flavor?</label>
+                <select id="coffee" name="coffee">
+                    <option value="">--Please choose</option>
+                    <option value="mocha">Mocha</option>
+                    <option value="icecoffee">Ice Coffee</option>
+                    <option value="coffee">Coffee</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="caramel">Caramel</option>
+                </select>
                 <!--fieldset-->
                 <legend>What are you interested in?</legend>
 
                 <label>
                     <input type="radio" name="inquiry" value="buy-coffee">Buy Coffee
                 </label>
-                
+
                 <label>
                     <input type="radio" name="inquiry" value="employment">Seeking employment
                 </label>
@@ -66,18 +66,18 @@
                 <label for="comments">Cooments:</label>
                 <textarea id="comments" name="comments" rows="6"></textarea>
 
-                
-            <!--/fieldset-->
 
-            <button type="submit">Submit</button>
-          </form>
+                <!--/fieldset-->
+
+                <button type="submit">Submit</button>
+            </form>
         </main>
         <footer>
             <img src="images/logo-footer.png" alt="Canmnons Coffee Logo, beans of joy" class="logo-footer">
             <p>&copy; 2026 Cannons Coffee. All Rights Reserved.</p>
         </footer>
     </div>
-    <script src="custom-inquiry.js"></script>
+<script src="js/custom-inquiry.js"></script>
 </body>
 
 </html>
