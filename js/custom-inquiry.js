@@ -25,8 +25,4 @@ form.addEventListener("submit", function(event) {
 
     message.textContent = `Thank you ${name}! We appreciate your interest in ${inquiry}. Your favorite coffee flavor is ${coffee} and your ${comments}. We will soon contact you at ${email} or ${phone}.`
     console.log(message);
-
-    setTimeout(function(){
-        message.textContent = "";
-    }, 5000);
-});
+}
