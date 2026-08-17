@@ -19,7 +19,6 @@ function onFormSubmit(event) {
     let comments = dataObject.comments
     let inquiry = dataObject.inquiry
     let coffee = dataObject.coffee
-    let message = dataObject.message
     
     console.log("Name:", name);
     console.log("Email:", email);
@@ -28,7 +27,7 @@ function onFormSubmit(event) {
    console.log("inquiry", inquiry);
    console.log("coffee", coffee);
    
-
+    let message = dataObject.message;
     message.textContent = `Thank you ${name}! We appreciate your interest in ${inquiry}. Your coffee flavor is ${coffee} and your comments are ${comments}. We will soon contact you at ${email} or ${phone}.`
     console.log(message);
 }
