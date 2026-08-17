@@ -29,7 +29,49 @@
 
         </header>
         <main>
-            
+          <h2>Inquiry Form</h2>
+          
+          <form id="inquiryForm">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+
+
+            <label for="coffee">Favorite flavor?</label>
+            <select id="coffee" name="coffee">
+                <option value="">--Please choose</option>
+                <option value="mocha">Mocha</option>
+                <option value="icecoffee">Ice Coffee</option>
+                <option value="coffee">Coffee</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="caramel">Caramel</option>
+            </select>
+                <!--fieldset-->
+                <legend>What are you interested in?</legend>
+
+                <label>
+                    <input type="radio" name="inquiry" value="buy-coffee">Buy Coffee
+                </label>
+                
+                <label>
+                    <input type="radio" name="inquiry" value="employment">Seeking employment
+                </label>
+
+                <label for="comments">Cooments:</label>
+                <textarea id="comments" name="comments" rows="6"></textarea>
+
+                
+            <!--/fieldset-->
+
+            <button type="submit">Submit</button>
+          </form>
         </main>
         <footer>
             <img src="images/logo-footer.png" alt="Canmnons Coffee Logo, beans of joy" class="logo-footer">
