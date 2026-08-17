@@ -18,6 +18,6 @@ form.addEventListener("submit", submit);
     console.log("coffee", coffee);
 
 
-    message.textContent = `Thank you ${name}! We appreciate your interest in ${inquiry}. Your favorite coffee flavor is ${coffee} and your ${comments}. We will soon contact you at ${email} or ${phone}.`
+    message.textContent = `Thank you ${name}! We appreciate your interest in ${inquiry}. Your coffee flavor is ${coffee} and your comments are ${comments}. We will soon contact you at ${email} or ${phoneNumber}.`
     console.log(message);
 }

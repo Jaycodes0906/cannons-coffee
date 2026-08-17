@@ -12,7 +12,8 @@ form.addEventListener("submit", submit)
     console.log("Email:", email);
    console.log("password", pass);
 
-
     message.textContent = `Welcome, ${name}! You are logged in!`
     console.log(message);
 }
+
+form.addEventListener("submit", onFormSubmit);
