@@ -8,13 +8,7 @@ form.addEventListener("submit", function(event) {
     const phone = document.getElementById("phone").value;
     const comments = document.getElementById("comments").value;
     const coffee = document.getElementById("coffee")
-    const inquiry = document.querySelector(
-        'input[name="inquiry"]:checked'
-    );
 
-    const inquiryChoice = inquiry ? inquiry.value: "No selection";
-
-    
     console.log("Name:", name);
     console.log("Email:", email);
     console.log("phone:", phone);
