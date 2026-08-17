@@ -1,6 +1,7 @@
 const form = document.getElementById("inquiryForm");
 
-form.addEventListener("submit", function(event) {
+form.addEventListener("submit", submit);
+    function(event) {
     event.preventDefault();
 
     const name = document.getElementById(name).value;
