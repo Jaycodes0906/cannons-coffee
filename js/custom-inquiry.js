@@ -1,6 +1,6 @@
 const form = document.getElementById("inquiryForm");
 
-form.addEventListener("submit", Submit);function(event) {
+form.addEventListener("submit", function(event) {
     event.preventDefault();
 
     const name = document.getElementById(name).value;
@@ -9,7 +9,7 @@ form.addEventListener("submit", Submit);function(event) {
     const comments = document.getElementById("comments").value;
     const coffee = document.getElementById("coffee")
     const inquiry = document.querySelector(
-        input[name="inquiry"]:checked
+        'input[name="inquiry"]:checked'
     );
 
     const inquiryChoice = inquiry ? inquiry.value: "No selection";
@@ -27,6 +27,6 @@ form.addEventListener("submit", Submit);function(event) {
     console.log(message);
 
     setTimeout(function(){
-        message.textContent = "":
+        message.textContent = "";
     }, 5000);
-    };
+});
