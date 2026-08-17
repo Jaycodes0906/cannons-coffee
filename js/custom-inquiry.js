@@ -17,14 +17,16 @@ function onFormSubmit(event) {
     let email = dataObject.email
     let tel = dataObject.phoneNumber
     let comments = dataObject.comments
-    let inquiry = dataObject.inquiry
+    let inquiry = dataObject.buy-coffee
+    let inquiry = dataObject.employment
     let coffee = dataObject.coffee
     
     console.log("Name:", name);
     console.log("Email:", email);
    console.log("phone", phone);
    console.log("comments", comments);
-   console.log("inquiry", inquiry);
+   console.log("inquiry", buy-coffee);
+   console.log("inquiry", employment)
    console.log("coffee", coffee);
    
     let message = dataObject.message;
