@@ -22,7 +22,7 @@ function onFormSubmit(event) {
     console.log("Name:", name);
     console.log("Email:", email);
    console.log("password", pass);
-     let myMessage = dataObject.myMessageessage
+    let myMessage = dataObject.myMessageessage
     myMessage.textContent = `Welcome, ${name}! You are logged in!`
     console.log(myMessage);
 }
