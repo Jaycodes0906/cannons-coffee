@@ -22,9 +22,9 @@ function onFormSubmit(event) {
     console.log("Name:", name);
     console.log("Email:", email);
    console.log("password", pass);
-     let message = dataObject.login-message
-    message.textContent = `Welcome, ${name}! You are logged in!`
-    console.log(message);
+     let myMessage = dataObject.myMessageessage
+    myMessage.textContent = `Welcome, ${name}! You are logged in!`
+    console.log(myMessage);
 }
 
 form.addEventListener("submit", onFormSubmit);
