@@ -1,5 +1,5 @@
 const form = document.getElementById("inquiryForm");
-const message = document,querySelector(".inquiry-message");
+const message = document.querySelector(".inquiry-message");
 
 
 function onFormSubmit(event) {
