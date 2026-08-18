@@ -20,7 +20,7 @@ function onFormSubmit(event) {
     let tel = dataObject.phoneNumber
     let comments = dataObject.comments
     let coffee = dataObject.buy
-    let hire = dataObject.employment
+    let work = dataObject.employment
     let flavor = dataObject.flavor
     
     console.log("Name:", name);
@@ -28,7 +28,7 @@ function onFormSubmit(event) {
    console.log("phone", phone);
    console.log("comments", comments);
    console.log("buy", coffee);
-   console.log("work", work)
+   console.log("work", employment)
    console.log("flavor", flavor);
    
 
