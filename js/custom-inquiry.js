@@ -18,7 +18,7 @@ function onFormSubmit(event) {
     let tel = dataObject.phoneNumber
     let comments = dataObject.comments
     let inquiry = dataObject.buy-coffee
-    let inquiry = dataObject.employment
+    let hire = dataObject.employment
     let coffee = dataObject.coffee
     
     console.log("Name:", name);
@@ -30,7 +30,7 @@ function onFormSubmit(event) {
    console.log("coffee", coffee);
    
     let message = dataObject.message;
-    message.textContent = `Thank you ${name}! We appreciate your interest in ${inquiry}. Your coffee flavor is ${coffee} and your comments are ${comments}. We will soon contact you at ${email} or ${phone}.`
+    message.textContent = `Thank you ${name}! We appreciate your interest in ${inquiry} or ${hire}. Your coffee flavor is ${coffee} and your comments are ${comments}. We will soon contact you at ${email} or ${phone}.`
     console.log(message);
 }
 
