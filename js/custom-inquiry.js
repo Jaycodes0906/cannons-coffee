@@ -1,4 +1,6 @@
 const form = document.getElementById("inquiryForm");
+const message = document,querySelector(".inquiry-message")
+
 
 function onFormSubmit(event) {
 
@@ -29,9 +31,8 @@ function onFormSubmit(event) {
    console.log("hire", employment)
    console.log("coffee", coffee);
    
-    let message = dataObject.message;
+
     message.textContent = `Thank you ${name}! We appreciate your interest in ${inquiry} or ${hire}. Your coffee flavor is ${coffee} and your comments are ${comments}. We will soon contact you at ${email} or ${phone}.`
-    console.log(message);
-}
+    
 
 form.addEventListener("submit", onFormSubmit);
