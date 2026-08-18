@@ -28,7 +28,7 @@ function onFormSubmit(event) {
    console.log("phone", phone);
    console.log("comments", comments);
    console.log("buy", coffee);
-   console.log("work", employment)
+   console.log("work", work)
    console.log("flavor", flavor);
    
 
