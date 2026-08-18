@@ -19,7 +19,7 @@ function onFormSubmit(event) {
     let email = dataObject.email
     let tel = dataObject.phoneNumber
     let comments = dataObject.comments
-    let inquiry = dataObject.buy-coffee
+    let coffee = dataObject.buy
     let hire = dataObject.employment
     let flavor = dataObject.flavor
     
