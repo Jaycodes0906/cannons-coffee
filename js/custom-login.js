@@ -1,5 +1,5 @@
 const form = document.getElementById("login");
-
+const message = document.querySelector("login-message")
    
 
 function onFormSubmit(event) {
