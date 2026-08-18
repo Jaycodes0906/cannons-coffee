@@ -28,11 +28,11 @@ function onFormSubmit(event) {
    console.log("phone", phone);
    console.log("comments", comments);
    console.log("buy", coffee);
-   console.log("hire", employment)
+   console.log("work", work)
    console.log("flavor", flavor);
    
 
-    message.textContent = `Thank you ${name}! We appreciate your interest in ${buy} or ${hire}. Your coffee flavor is ${flavor} and your comments are ${comments}. We will soon contact you at ${email} or ${phone}.`
+    message.textContent = `Thank you ${name}! We appreciate your interest in ${buy} or ${work}. Your coffee flavor is ${flavor} and your comments are ${comments}. We will soon contact you at ${email} or ${phone}.`
     
 }
 form.addEventListener("submit", onFormSubmit);
