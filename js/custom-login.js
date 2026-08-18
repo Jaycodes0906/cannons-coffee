@@ -1,5 +1,5 @@
 const form = document.getElementById("login");
-const message = document.querySelector("login-message")
+const message = document.querySelector(".login-message")
    
 
 function onFormSubmit(event) {
@@ -22,9 +22,8 @@ function onFormSubmit(event) {
     console.log("Name:", name);
     console.log("Email:", email);
    console.log("password", pass);
-    let myMessage = dataObject.myMessageessage
-    myMessage.textContent = `Welcome, ${name}! You are logged in!`
-    console.log(myMessage);
+  
+    message.textContent = `Welcome, ${name}! You are logged in!`
 }
 
 form.addEventListener("submit", onFormSubmit);
