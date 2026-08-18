@@ -26,7 +26,7 @@ function onFormSubmit(event) {
    console.log("phone", phone);
    console.log("comments", comments);
    console.log("inquiry", buy-coffee);
-   console.log("inquiry", employment)
+   console.log("hire", employment)
    console.log("coffee", coffee);
    
     let message = dataObject.message;
