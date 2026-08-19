@@ -20,7 +20,7 @@ function onFormSubmit(event) {
     let tel = dataObject.phoneNumber
     let comments = dataObject.comments
     let coffee = dataObject.buy
-    let work = dataObject.employment
+    let employment = dataObject.employment
     let flavor = dataObject.flavor
     
     console.log("Name:", name);
@@ -28,11 +28,11 @@ function onFormSubmit(event) {
    console.log("phone", phone);
    console.log("comments", comments);
    console.log("buy", coffee);
-   console.log("hiring", employment)
+   console.log("employment", employment)
    console.log("flavor", flavor);
    
 
-    message.textContent = `Thank you ${name}! We appreciate your interest in ${buy} or ${work}. Your coffee flavor is ${flavor} and your comments are ${comments}. We will soon contact you at ${email} or ${phone}.`
+    message.textContent = `Thank you ${name}! We appreciate your interest in ${buy} or ${employment}. Your coffee flavor is ${flavor} and your comments are ${comments}. We will soon contact you at ${email} or ${phone}.`
     
 }
 form.addEventListener("submit", onFormSubmit);
